@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom, #aa5304, #bd6518, #d17729, #e48939, #f89c49);
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    border-radius: 10px;
+    border-bottom:  white 1px inset;
+}
+.container-tittle{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.container-tittle .img-logo{
+    opacity: 0.7;
+    max-width: 100%;
+    width: 21rem;
+    height: 5.5rem;
+}
+.container-nav {
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #3333336c;
+    padding: 20px;
+    border-radius: 10px;
+    border: white 1px inset;
+}
+.container-nav a {
+    font-family: "Roboto";
+    margin: 0 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.container-nav .modo {
+    position: absolute;
+    right: 10px;
+}
+
+.container-nav .modo span {
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+.modo{
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.text-precentation{
+    background: linear-gradient(rgba(0, 0, 0, 0.450), rgba(0, 0, 0, 0.450)), url(../proyectos.jpg);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    overflow: hidden;
+    border: rgb(255, 255, 255) 2px double;
+    height: 28rem;
+    color: white;
+    padding-top: 2rem;
+    text-align: center;  
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    transition: all 1s;
+    z-index: 1;
+}
+.android{
+    position: absolute;
+    transform: translateX(720px) translateY(-10px);
+}
+.android img{
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transform: rotate(70deg);
+}
+.android2{
+    position: absolute;
+    transform: translateX(-700px) translateY(200px);
+    z-index: 2;
+}
+.android2 img{
+    transform: translate(-50%, -50%);
+    transform: rotate(-10deg);
+}
+.text-precentation{
+    display: flex;
+    flex-direction: column;
+}
+.text-precentation h2 {
+    margin: 0;
+    transform: translateY(-60px);
+    font-size: 2.5em;
+}
+.text-precentation p {
+    margin: 0;
+    max-width: 800px;
+    font-size: x-large;
+}
