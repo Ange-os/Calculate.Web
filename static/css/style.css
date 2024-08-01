@@ -18,7 +18,7 @@ header{
 
 .android{
     position: absolute;
-    transform: translateX(-170px);
+    transform: translateX(-140px);
 }
 .android img{
     transform: translate(-50%, -50%);
@@ -42,7 +42,7 @@ header{
     height: 5.5rem;
 }
 .container-nav {
-    margin-top: 6px;
+    margin-top: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,14 +91,14 @@ header{
     height: 100%;
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 54%;
     z-index: 2;
 }
 .img-gif-izq{
     height: 100%;
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 54%;
     
 }
 .img_gif_estandar{
@@ -126,8 +126,8 @@ header{
     border: rgb(255, 255, 255) 3px double;
     height: 35rem;
     text-align: center;
-    margin: 2rem;
-    width: 70%;
+    margin: 2rem 3rem;
+    width: 68%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -159,8 +159,8 @@ header{
     text-align: center;  
     justify-content: center;
     align-items: center;
-    margin: 2rem;
-    width: 70%;
+    margin: 2rem 3rem;
+    width: 68%;
     transition: all 1s;
 }
 .img-1{

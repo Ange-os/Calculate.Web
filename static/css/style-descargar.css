@@ -26,7 +26,7 @@ header{
     height: 5.5rem;
 }
 .container-nav {
-    margin-top: 6px;
+    margin-top: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +67,7 @@ header{
 }
 .text-precentation{
     background: linear-gradient(rgba(0, 0, 0, 0.450), rgba(0, 0, 0, 0.450)), url(../proyectos.jpg);
+    border-radius: 85px 25px;
     opacity: 1;
     display: flex;
     flex-direction: column;
@@ -107,11 +108,25 @@ header{
 }
 .text-precentation h2 {
     margin: 0;
-    transform: translateY(-60px);
+    transform: translateY(-50px);
     font-size: 2.5em;
 }
 .text-precentation p {
+    transform: translateY(-30px);
     margin: 0;
     max-width: 800px;
     font-size: x-large;
+}
+.text-precentation a {
+    transform: translateY(20px);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+}
+.text-precentation a:hover {
+    text-decoration: underline;
+    color: rgba(25, 0, 255, 0.733);
+    font-weight: bold;
 }

@@ -19,6 +19,9 @@ window.addEventListener('scroll', function() {
             if(distancia <= altura){
                 txt[i].classList.add('aparecer-tex');
             }
+            else{
+                txt[i].classList.remove('aparecer-tex');
+            }
         }
     }
     fade('left')
