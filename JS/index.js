@@ -50,10 +50,10 @@ mode.addEventListener('click', function(){
         if(v){
             mode.innerHTML = 'dark_mode'
             body.style.background = 'linear-gradient(to bottom, #aa5304, #bd6518, #d17729, #e48939, #f89c49)'
-            imgLogo.src = "../static/no-bg.png"
+            imgLogo.src = "static/no-bg.png"
         }else{
             mode.innerHTML = 'light_mode'
             body.style.background = 'linear-gradient(to left bottom, #3b1c00, #460605, #4b001b, #410037, #040057)'
-            imgLogo.src = "../static/mode-dark.png"
+            imgLogo.src = "static/mode-dark.png"
         }
     })
