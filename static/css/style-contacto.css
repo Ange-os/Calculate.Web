@@ -12,6 +12,7 @@ header{
     box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
+    transition: all 1s;
 }
 .container-tittle{
     width: 50%;
@@ -41,6 +42,7 @@ header{
     box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
+    transition: all 1s;
 }
 .container-nav a {
     font-family: "Roboto";
@@ -48,6 +50,10 @@ header{
     color: white;
     text-decoration: none;
     font-size: 1.3em;
+}
+.container-nav a:hover{
+    text-decoration: underline;
+    font-size: 1.4;
 }
 .container-nav .modo {
     position: absolute;
@@ -212,11 +218,13 @@ footer{
     border: white 2px double;
     box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
+    transition: all 1s;
 }
 footer .imgF {
     height: 6rem;
     width: 18rem;
+    transform: translateX(7em);
 }
 
 footer .Fredes{
@@ -225,6 +233,9 @@ footer .Fredes{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+footer .Ftelderechos{
+    transform: translateX(8em);
 }
 footer .Fredes i{
     font-size: 2em;

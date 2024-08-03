@@ -43,6 +43,7 @@ let mode = document.getElementById('modoclaro')
 let body = document.getElementById('body')
 let imgLogo = document.getElementById('img-logo')
 let nav = document.getElementById('nav')
+let luz = document.querySelectorAll('.luz')
 
 let v = true;
 mode.addEventListener('click', function(){
@@ -51,9 +52,18 @@ mode.addEventListener('click', function(){
             mode.innerHTML = 'dark_mode'
             body.style.background = 'linear-gradient(to bottom, #aa5304, #bd6518, #d17729, #e48939, #f89c49)'
             imgLogo.src = "static/no-bg.png"
+            for(let l of luz){
+                l.style.boxShadow = '11px 3px 5px 0px rgba(0, 0, 0, 0.75)';
+                l.style.webkitBoxShadow = '-11px 3px 5px 0px rgba(0, 0, 0, 0.75)';
+                l.style.mozBoxShadow = '11px 3px 5px 0px rgba(0, 0, 0, 0.75)';
+            }
         }else{
             mode.innerHTML = 'light_mode'
             body.style.background = 'linear-gradient(to left bottom, #3b1c00, #460605, #4b001b, #410037, #040057)'
             imgLogo.src = "static/mode-dark.png"
-        }
-    })
+            for(let l of luz){
+                l.style.boxShadow = '11px 3px 5px 0px rgba(255, 255, 255, 0.75)';
+                l.style.webkitBoxShadow = '-11px 3px 5px 0px rgba(255, 255, 255, 0.75)';
+                l.style.mozBoxShadow = '11px 3px 5px 0px rgba(255, 255, 255, 0.75)';
+            }
+    }})   

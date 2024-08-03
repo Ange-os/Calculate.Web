@@ -12,6 +12,7 @@ header{
     box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
+    transition: all 1s;
 }
 .container-tittle{
     width: 50%;
@@ -41,6 +42,7 @@ header{
     box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
+    transition: all 1s;
 }
 .container-nav a {
     font-family: "Roboto";
@@ -49,11 +51,14 @@ header{
     text-decoration: none;
     font-size: 1.3em;
 }
+.container-nav a:hover{
+    text-decoration: underline;
+    font-size: 1.4;
+}
 .container-nav .modo {
     position: absolute;
     right: 10px;
 }
-
 .modo{
     width: 12%;
     display: flex;
@@ -74,7 +79,7 @@ header{
     justify-content: center;
 }
 .text-precentation{
-    background: linear-gradient(rgba(0, 0, 0, 0.450), rgba(0, 0, 0, 0.450)), url(../proyectos.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.450), rgba(0, 0, 0, 0.450)), url(../imd.jpg);
     border-radius: 85px 25px;
     opacity: 1;
     display: flex;
@@ -166,13 +171,15 @@ footer{
     padding: 20px;
     border-radius: 10px;
     border: white 2px double;
-    box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -6px 7px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
+    transition: all 1s;
 }
 footer .imgF {
     height: 6rem;
     width: 18rem;
+    transform: translateX(7em);
 }
 
 footer .Fredes{
@@ -181,6 +188,9 @@ footer .Fredes{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+footer .Ftelderechos{
+    transform: translateX(8em);
 }
 footer .Fredes i{
     font-size: 2em;
