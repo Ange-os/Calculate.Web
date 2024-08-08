@@ -154,7 +154,7 @@ header{
     flex-direction: column;
     border-radius: 25px 85px;
     border: rgb(255, 255, 255) 3px double;
-    height: 35rem;
+    height: 36rem;
     text-align: center;
     margin: 2rem 3rem;
     width: 74%;
@@ -176,22 +176,23 @@ header{
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.438);
 }
 .text-bienvenida h1{
-    margin: 0;
-    font-size: 3.6rem;
+    color: #f0b906;
+    margin: 4px;
+    font-size: 3.2rem;
 }
 .text-bienvenida p{
-    max-width: 90%;
+    max-width: 76%;
     text-align: center;
     margin: 0;
-    font-size:2rem;
+    font-size: 1.8rem;
     padding: 6px;
     padding-left: 8px;
     padding-right: 8px;
 }
 .text-bienvenida h4{
-    margin-top: 6px;
-    margin-bottom: 4px;
-    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
 }
 .text-bienvenida ul{
     list-style-position:initial;
@@ -202,7 +203,7 @@ header{
 }
 .text-bienvenida li{ /* Espacio entre cada ítem */
     line-height: 1.4;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .text-precentation{
     opacity: 0;
@@ -235,6 +236,7 @@ header{
     background-size: cover;
 }
 .text-precentation h2{
+    color: #f0b906;
     margin: 0;
     padding-bottom: 8px;
     font-size: 2.5rem;

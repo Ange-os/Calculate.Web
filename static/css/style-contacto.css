@@ -155,9 +155,10 @@ header{
     font-weight: bold;
 }
 .text-precentation h3{
+    color: #f0b906;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-size: 2.4rem;;
+    font-size: 2.6rem;;
 }
 form {
     margin-bottom: 0;
