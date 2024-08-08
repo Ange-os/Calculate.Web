@@ -7,7 +7,7 @@ body{
     align-items: center;
 }
 header{
-    width: 85%;
+    width: 90%;
     display: flex;
     justify-content: center;
     height: 10vh;
@@ -31,7 +31,7 @@ header{
     opacity: 0.7;
     max-width: 100%;
     width: 22rem;
-    height: 5.6rem;
+    height: 6rem;
 }
 .container-nav {
     width: 85%;
@@ -112,8 +112,9 @@ header{
     align-items: center;
     height: 80%;
     width: 60%; /* Centra el texto */
-    background-color: #85858538;
+    background-color: #00000038;
     border-radius: 20px;
+    border: black 0.8px inset;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.438);
 }
 

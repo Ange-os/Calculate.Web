@@ -9,9 +9,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 2s;
 }
 header{
-    width: 85%;
+    width: 90%;
     display: flex;
     justify-content: center;
     height: 10vh;
@@ -47,7 +48,7 @@ header{
     opacity: 0.7;
     max-width: 100%;
     width: 22rem;
-    height: 5.6rem;
+    height: 6rem;
 }
 .container-nav {
     width: 85%;
@@ -103,7 +104,7 @@ header{
     background: -webkit-linear-gradient(to bottom, hsla(29, 95%, 34%, 1) 52%, hsla(28, 77%, 42%, 1) 77%, hsla(28, 67%, 49%, 1) 99%, hsla(28, 76%, 56%, 1) 100%, hsla(28, 93%, 63%, 1) 100%);    
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aa5304", endColorstr="#bd6518", GradientType=0);
     margin-top: 2px;
-    width: 85%;
+    width: 90%;
     padding-top: 2rem;
     border-radius: 20px;
     border-bottom: black 2px double;
@@ -165,26 +166,43 @@ header{
 .text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 90%;
     width: 90%; /* Centra el texto */
-    background-color: #85858538;
+    border: black 0.8px inset;
+    background-color: #00000038;
     border-radius: 15px;
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.438);
 }
 .text-bienvenida h1{
     margin: 0;
-    padding-bottom: 8px;
-    font-size: 3.1rem;
+    font-size: 3.6rem;
 }
 .text-bienvenida p{
+    max-width: 90%;
     text-align: center;
     margin: 0;
-    font-size:x-large;
+    font-size:2rem;
     padding: 6px;
     padding-left: 8px;
     padding-right: 8px;
+}
+.text-bienvenida h4{
+    margin-top: 6px;
+    margin-bottom: 4px;
+    font-size: 1.4rem;
+}
+.text-bienvenida ul{
+    list-style-position:initial;
+    margin: 0 auto; /* Centra la lista dentro del contenedor */
+    padding-left: 6rem; /* Elimina el padding izquierdo de la lista */
+    text-align: left; /* Alinea el texto de los ítems a la izquierda */
+    max-width: 600px;
+}
+.text-bienvenida li{ /* Espacio entre cada ítem */
+    line-height: 1.4;
+    font-size: 1.2rem;
 }
 .text-precentation{
     opacity: 0;
@@ -193,7 +211,7 @@ header{
     margin-top: 2rem;
     overflow: hidden;
     border: rgb(255, 255, 255) 3px double;
-    height: 28rem;
+    height: 30rem;
     color: white;
     padding-top: 2rem;
     text-align: center;  
@@ -218,7 +236,7 @@ header{
 }
 .text-precentation h2{
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 8px;
     font-size: 2.5rem;
 }
 .text-precentation p{
@@ -228,6 +246,22 @@ header{
     padding: 8px;
     padding-left: 8px;
     padding-right: 8px;
+    font-size: x-large;
+}
+.text-precentation h4{
+    margin: 4px;
+    font-size: larger;
+}
+.text-precentation ul{
+    list-style-position:initial;
+    margin: 4px auto; /* Centra la lista dentro del contenedor */
+    padding-left: 0; /* Elimina el padding izquierdo de la lista */
+    text-align: left; /* Alinea el texto de los ítems a la izquierda */
+    max-width: 600px;
+}
+.text-precentation li{ /* Espacio entre cada ítem */
+    line-height: 1.4;
+    font-size: 1.1rem;
 }
 .aparecer-tex{
     opacity: 1;
@@ -253,7 +287,7 @@ footer{
     display: flex;
     justify-content: space-around;
     margin-top: 8px;
-    background-color: #40281229;
+    background-color: #40281261;
     padding: 20px;
     border-radius: 20px;
     border: white 2px double;
