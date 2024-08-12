@@ -78,4 +78,36 @@ mode.addEventListener('click', function(){
                 j.style.background = '-moz-linear-gradient(to bottom, hsla(28, 100%, 12%, 1) 0%, hsla(1, 87%, 15%, 1) 28%, hsla(338, 100%, 15%, 1) 44%, hsla(309, 100%, 13%, 1) 79%, hsla(243, 100%, 17%, 1) 100%)';
                 j.style.background = '-webkit-linear-gradient(to bottom, hsla(28, 100%, 12%, 1) 0%, hsla(1, 87%, 15%, 1) 28%, hsla(338, 100%, 15%, 1) 44%, hsla(309, 100%, 13%, 1) 79%, hsla(243, 100%, 17%, 1) 100%)';
             }
-    }})   
+    }})
+    
+    const fomulari = document.getElementById('form-contact');
+fomulari.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+
+    // Depurar: Verifica los datos que se están enviando
+    console.log('Datos del formulario:', Object.fromEntries(formData.entries()));
+
+    try {
+        const response = await fetch('https://aneloko.pythonanywhere.com/api/send-email/', {
+            method: 'POST',
+            body: formData,
+        });
+
+        if (!response.ok) {
+            // Si no es exitoso, imprime el código de estado y el texto de la respuesta
+            console.error('Error en la respuesta:', response.status, response.statusText);
+            const text = await response.text(); // Captura el cuerpo de la respuesta
+            console.error('Cuerpo de la respuesta:', text);
+            alert(`Error ${response.status}: ${response.statusText}`);
+            return;
+        }
+
+        const result = await response.json();
+        alert(result.status);
+        fomulari.reset();
+    } catch (error) {
+        console.error('Error en la solicitud:', error);
+        alert('Error en la solicitud');
+    }
+});
