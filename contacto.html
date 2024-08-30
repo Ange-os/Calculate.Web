@@ -11,19 +11,19 @@
 </head>
 <body id="body" style=>
     <header class="luz animated bounceInDown">
-            <div class="container-tittle">
-                <img id="img-logo"  src="static/no-bg.png" class="img-logo" alt="logo-app-mobile">
-            </div>
-    </header>        
-    <nav class="container-nav luz">
-        <a href="index.html" class="animated bounceInRight">Inicio</a>
-        <a href="descarga.html" class="animated bounceInLeft">Descargar</a>
-        <div class="modo">
-            <i class="material-symbols-outlined" id="modoclaro">
-                dark_mode
-            </i>
+        <div class="container-tittle">
+            <img id="img-logo"  src="static/no-bg.png" class="img-logo" alt="logo-app-mobile">
         </div>
-    </nav>
+        <nav class="container-nav luz-nav">
+            <a href="index.html" class="animated bounceInLeft luz-detalles">Inicio</a>
+            <a href="descarga.html" class="animated bounceInRight luz-detalles">Descargar</a>
+            <div class="modo luz-detalles">
+                <i class="material-symbols-outlined" id="modoclaro">
+                    dark_mode
+                </i>
+            </div>
+        </nav>        
+    </header>
     <div class="content">
         <div class="android animated zoomIn">
             <img src="static/android.png" alt="android-app">
@@ -45,21 +45,21 @@
             </div>
         </div>
     </div>
-    <footer class="luz animated bounceInUp">
-        <div class="Fimg">
-            <img class="imgF" src="static/logo-color.png" alt="">
+    <footer class="luz contFotter animated bounceInLeft">
+        <div class="Ftelderechos luz-nav animated bounceInRight">
+            <div class="Fredes animated bounceInDown">
+                <i class="fa-brands fa-facebook f facebook" "></i>
+                <i class="fa-brands fa-square-instagram instagram"></i>
+                <i class="fa-brands fa-square-whatsapp whatsapp"></i></i>
+            </div>
+            <ul class="footer-date luz-detalles">
+                <li>© 2024 Angel Rios. Todos los derechos reservados.</li>
+                <li>+54-2664-025070</li>
+                <li>gabriel.ska0@gmail.com</li>
+            </ul>
         </div>
-        <div class="Ftelderechos">
-                    <div class="Fredes">
-                        <i class="fa-brands fa-facebook f" style="color: blue;"></i>
-                        <i class="fa-brands fa-square-instagram" style="color: brown;"></i>
-                        <i class="fa-brands fa-square-whatsapp" style="color: green;"></i></i>
-                    </div>
-                    <ul>
-                        <li>+54-2664-025070</li>
-                        <li>gabriel.ska0@gmail.com</li>
-                        <li>© 2024 Angel Rios. Todos los derechos reservados.</li>
-                    </ul>
+        <div class="Fimg">
+            <img id="img-logo" class="imgF" src="static/no-bg.png" alt="">
         </div>
     </footer>
 <script src="JS/index.js"></script>

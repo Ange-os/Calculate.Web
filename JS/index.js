@@ -41,45 +41,74 @@ window.addEventListener('DOMContentLoaded', function(){
 })
 let mode = document.getElementById('modoclaro')
 let body = document.getElementById('body')
-let imgLogo = document.getElementById('img-logo')
+let imgLogo = document.querySelectorAll('#img-logo')
 let nav = document.getElementById('nav')
 let luz = document.querySelectorAll('.luz')
 let contec = document.querySelectorAll('.container-img-txt')
+let detalles = document.querySelectorAll('.luz-detalles')
+let navs = document.querySelectorAll('.luz-nav')
+let fcont = document.querySelector('.contFotter')
+let fRnav = document.querySelector('.Ftelderechos')
 let v = true;
 mode.addEventListener('click', function(){
         v = !v
         if(v){
             mode.innerHTML = 'dark_mode';
-            body.style.background = 'linear-gradient(to bottom, #aa5304, #bd6518, #d17729, #e48939, #f89c49)';
-            imgLogo.src = "static/no-bg.png";
+            body.style.background = 'linear-gradient(to bottom, rgba(163,196,188,1) 0%, rgba(231,239,197,1) 50%, rgba(242,231,201,1) 100%)';
+            for(let a of imgLogo){
+                a.src = "static/no-bg.png";
+            }
+            fcont.style.background = '#AFCDA2';
+            fRnav.style.background = '#3333336c';
             for(let l of luz){
-                l.style.boxShadow = '11px 3px 5px 0px rgba(0, 0, 0, 0.75)';
-                l.style.webkitBoxShadow = '-11px 3px 5px 0px rgba(0, 0, 0, 0.75)';
-                l.style.mozBoxShadow = '11px 3px 5px 0px rgba(0, 0, 0, 0.75)';
+                l.style.boxShadow = '15px 10px 5px 0px rgba(0, 0, 0, 0.75)';
+                l.style.webkitBoxShadow = '-15px 10px 5px 0px rgba(0, 0, 0, 0.75)';
+                l.style.mozBoxShadow = '15px 10px 5px 0px rgba(0, 0, 0, 0.75)';
             }
             for(let j of contec){
-                j.style.background = 'hsla(29, 95%, 34%, 1)';
-                j.style.background = 'linear-gradient(to bottom, hsla(29, 95%, 34%, 1) 52%, hsla(28, 77%, 42%, 1) 77%, hsla(28, 67%, 49%, 1) 99%, hsla(28, 76%, 56%, 1) 100%, hsla(28, 93%, 63%, 1) 100%)';
-                j.style.background = '-moz-linear-gradient(to bottom, hsla(29, 95%, 34%, 1) 52%, hsla(28, 77%, 42%, 1) 77%, hsla(28, 67%, 49%, 1) 99%, hsla(28, 76%, 56%, 1) 100%, hsla(28, 93%, 63%, 1) 100%)';
-                j.style.background = '-webkit-linear-gradient(to bottom, hsla(29, 95%, 34%, 1) 52%, hsla(28, 77%, 42%, 1) 77%, hsla(28, 67%, 49%, 1) 99%, hsla(28, 76%, 56%, 1) 100%, hsla(28, 93%, 63%, 1) 100%)';
+                j.style.background = '#E7D39C';
+            }
+            for(let b of detalles){
+                b.style.boxShadow = '-4px 3px 16px 0px rgba(0,0,0,1)'
+                b.style.webkitBoxShadow = '-4px 3px 16px 0px rgba(0,0,0,1)'
+                b.style.mozBoxShadow = '-4px 3px 16px 0px rgba(0,0,0,1)'
+            }
+            for(let c of navs){
+                c.style.boxShadow = '-10px 6px 16px 0px rgba(0,0,0,1)'
+                c.style.webkitBoxShadow = '-10px 6px 16px 0px rgba(0,0,0,1)'
+                c.style.mozBoxShadow = '-10px 6px 16px 0px rgba(0,0,0,1)'
             }
         }else{
             mode.innerHTML = 'light_mode'
-            body.style.background = 'linear-gradient(to left bottom, #3b1c00, #460605, #4b001b, #410037, #040057)';
+            fcont.style.background = '#523D4D'
+            fRnav.style.background = '#6A4E63'
+            body.style.background = 'hsla(266, 6%, 24%, 1);'
+            body.style.background = 'linear-gradient(90deg, hsla(266, 6%, 24%, 1) 0%, hsla(218, 11%, 40%, 1) 100%)'
+            body.style.background = '-moz-linear-gradient(90deg, hsla(266, 6%, 24%, 1) 0%, hsla(218, 11%, 40%, 1) 100%)'
+            body.style.background = '-webkit-linear-gradient(90deg, hsla(266, 6%, 24%, 1) 0%, hsla(218, 11%, 40%, 1) 100%)'
             imgLogo.src = "static/mode-dark.png";
             for(let l of luz){
-                l.style.boxShadow = '11px 3px 5px 0px rgba(255, 255, 255, 0.75)';
-                l.style.webkitBoxShadow = '-11px 3px 5px 0px rgba(255, 255, 255, 0.75)';
-                l.style.mozBoxShadow = '11px 3px 5px 0px rgba(255, 255, 255, 0.75)';
+                l.style.boxShadow = '15px 10px 5px 0px rgba(255, 255, 255, 0.75)';
+                l.style.webkitBoxShadow = '-15px 10px 5px 0px rgba(255, 255, 255, 0.75)';
+                l.style.mozBoxShadow = '15px 10px 5px 0px rgba(255, 255, 255, 0.75)';
+            }
+            for(let a of imgLogo){
+                a.src = "static/mode-dark.png";
             }
             for(let j of contec){
-                j.style.background = 'hsla(28, 100%, 12%, 1)'
-                j.style.background = 'linear-gradient(to bottom, hsla(28, 100%, 12%, 1) 0%, hsla(1, 87%, 15%, 1) 28%, hsla(338, 100%, 15%, 1) 44%, hsla(309, 100%, 13%, 1) 79%, hsla(243, 100%, 17%, 1) 100%)';
-                j.style.background = '-moz-linear-gradient(to bottom, hsla(28, 100%, 12%, 1) 0%, hsla(1, 87%, 15%, 1) 28%, hsla(338, 100%, 15%, 1) 44%, hsla(309, 100%, 13%, 1) 79%, hsla(243, 100%, 17%, 1) 100%)';
-                j.style.background = '-webkit-linear-gradient(to bottom, hsla(28, 100%, 12%, 1) 0%, hsla(1, 87%, 15%, 1) 28%, hsla(338, 100%, 15%, 1) 44%, hsla(309, 100%, 13%, 1) 79%, hsla(243, 100%, 17%, 1) 100%)';
+                j.style.background = '#565658'
+            }
+            for(let b of detalles){
+                b.style.boxShadow = '-4px 3px 16px 0px rgba(255,255,255, 0.75)'
+                b.style.webkitBoxShadow = '-4px 3px 16px 0px rgba(255,255,255, 0.75)'
+                b.style.mozBoxShadow = '-4px 3px 16px 0px rgba(255,255,255, 0.75)'
+            }
+            for(let c of navs){
+                c.style.boxShadow = '-10px 6px 16px 0px rgba(255,255,255, 0.75)'
+                c.style.webkitBoxShadow = '-10px 6px 16px rgba(255,255,255, 0.75)'
+                c.style.mozBoxShadow = '-10px 6px 16px 0px rgba(255,255,255, 0.75)'
             }
     }})
-    
     const fomulari = document.getElementById('form-contact');
 fomulari.addEventListener('submit', async function(e) {
     e.preventDefault();

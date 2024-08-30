@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
-    background-image: linear-gradient(to bottom, #aa5304, #bd6518, #d17729, #e48939, #f89c49);
+    background: rgb(163,196,188);
+    background: linear-gradient(to bottom, rgba(163,196,188,1) , rgba(231,239,197,1) , rgba(242,231,201,1));
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 header{
-    width: 90%;
+    background-color: #3333333b;
+    width: 98%;
     display: flex;
     justify-content: center;
-    height: 10vh;
-    border-radius: 20px;
-    border:  white 1px inset;
-    box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
-    transition: all 1s;
+    height: 14vh;
+    border-radius: 26px;
+    border:  white 2px solid;
+    -moz-box-shadow: -15px 10px 16px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -15px 10px 16px 0px rgba(0,0,0,1);
+    box-shadow: -15px 10px 16px 0px rgba(0,0,0,1);
+    z-index: 1;
 }
 .container-tittle{
     width: 50%;
@@ -34,49 +36,73 @@ header{
     height: 6rem;
 }
 .container-nav {
-    width: 85%;
-    margin-top: 8px;
+    width: 62%;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     background-color: #3333336c;
-    padding: 20px;
-    border-radius: 20px;
-    border: white 2px double;
-    box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -11px 3px 5px 0px rgba(0,0,0,0.75);
-    transition: all 1s;
+    padding: 30px;
+    border-radius: 30px;
+    border: white 2px inset;
+    -moz-box-shadow: -10px 6px 16px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -10px 6px 16px 0px rgba(0,0,0,1);
+    box-shadow: -10px 6px 16px 0px rgba(0,0,0,1);
 }
 .container-nav a {
+    border: white 2px solid;
+    border-radius: 30px;
     font-family: "Roboto";
     margin: 0 30px;
     color: white;
+    padding: 15px 24px 15px 24px;
+    background-color: #33333388;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    -moz-box-shadow: -4px 3px 16px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -4px 3px 16px 0px rgba(0,0,0,1);
+    box-shadow: -4px 3px 16px 0px rgba(0,0,0,1);
 }
 .container-nav a:hover{
-    text-decoration: underline;
-    font-size: 1.4;
+    background-color: #333333b7;
+    text-shadow: 0 0 40px #ffffff, 0 0 40px #ffffff, 0 0 5px #ffffff, 0 0 10px #ffffff;
 }
 .container-nav .modo {
     position: absolute;
     right: 10px;
 }
 .modo{
-    width: 12%;
+    background-color: #33333388;
+    border: white 2px solid;
+    border-radius: 50%;
+    height: 60%;
+    width: 6%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    -moz-box-shadow: -4px 3px 16px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -4px 3px 16px 0px rgba(0,0,0,1);
+    box-shadow: -4px 3px 16px 0px rgba(0,0,0,1);
+}
+.modo:hover{
+    background-color: #333333b7;
 }
 .modo i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     font-size: 2.2em;
     color: white;
 }
 .modo i:hover{
     cursor: pointer;
+    text-shadow: 0 0 40px #ffffff, 0 0 40px #ffffff, 0 0 5px #ffffff, 0 0 10px #ffffff;
 }
 .content{
     width: 85%;
@@ -102,14 +128,14 @@ header{
     width: 85%;
     transition: all 1s;
     z-index: 1;
-    box-shadow: -11px 11px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -11px 11px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -11px 11px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -11px 11px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -11px 11px 5px 0px rgba(0,0,0,0.75);
 }
 .android{
     width: 410px;
     position: absolute;
-    transform: translateX(360px) translateY(-110px);
+    transform: translateX(370px) translateY(-165px);
 }
 .android img{
     transform: translate(-50%, -50%);
@@ -216,43 +242,101 @@ button:hover {
     background-color: #049b48;
 }
 footer{
-    width: 94%;
-    margin-top: 1rem;
+    width: 96%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 8px;
-    background-color: #3333336c;
+    margin-bottom: 8px;
+    background-color: #AFCDA2;
     padding: 20px;
     border-radius: 20px;
-    border: white 2px double;
+    border: white 3px double;
     box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -6px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -15px 10px 16px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -15px 10px 16px 0px rgba(0,0,0,1);
+    box-shadow: -15px 10px 16px 0px rgba(0,0,0,1);
     transition: all 1s;
+}
+footer .Fimg{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 footer .imgF {
     height: 6rem;
     width: 18rem;
-    transform: translateX(7em);
+}
+footer .Ftelderechos{
+    background-color: #3333336c;
+    margin: 2em 0em 2em 4em;
+    border: white 3px solid;
+    border-radius: 30px;
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    -moz-box-shadow: -10px 6px 16px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -10px 6px 16px 0px rgba(0,0,0,1);
+    box-shadow: -10px 6px 16px 0px rgba(0,0,0,1);
 }
 
 footer .Fredes{
-    margin-left: 40px;
-    gap: 12px;
+    margin: 0.8em;
+    background-color: #5f5f5f9f;
+    border-radius: 30px;
+    border: white 2px solid;
+    gap: 8px;
+    padding: 10px 15px 10px 15px;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
+    -moz-box-shadow: -4px 3px 16px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -4px 3px 16px 0px rgba(0,0,0,1);
+    box-shadow: -4px 3px 16px 0px rgba(0,0,0,1);
 }
-footer .Ftelderechos{
-    transform: translateX(8em);
+footer .Fredes:hover{
+    background-color: #33333362;
 }
 footer .Fredes i{
     font-size: 2em;
 }
-footer li{
-    color: white;
+.facebook:hover{
+    color: blue;
+    cursor: pointer;
+}
+.instagram:hover{
+    color: brown;
+    cursor: pointer;
+}
+.whatsapp:hover{
+    color: green;
+    cursor: pointer;
+}
+.footer-date{
+    border: white 2px solid;
+    margin: 1.5em ;
+    border-radius: 30px;
+    background-color: #afafaf8e;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 190px;
+    padding: 6px 40px 6px 40px;
+    text-align: center;
+    -moz-box-shadow: -2px 2px 16px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: -2px 2px 16px 0px rgba(0,0,0,1);
+    box-shadow: -2px 2px 16px 0px rgba(0,0,0,1);
+}
+.footer-date li{
+    color: rgb(255, 255, 255);
     font-size: 1.1em;
     list-style: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 :root {
     --animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
